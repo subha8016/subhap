@@ -1,0 +1,129 @@
+*{
+	margin: 0; padding: 0; box-sizing: boarder-box;
+	font-family: 'josefin sans', sans-serif;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('../images/abcd.jpg'); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: hotpink;
+}
+
+nav{
+	width: 100; height: 15vh;
+	background: rgba(0,0,0,0.2);
+	color: red; display: flex; justify-content: space-between;
+	align-items: center; text-transform: uppercase;
+}
+
+
+nav .logo{
+	width: 25%; text-align: center;
+	/*background: red;*/
+}
+	
+nav .menu{
+	width: 40%;  
+	display: flex; justify-content: space-around;
+}
+
+nav .menu a {
+	width: 25%;
+	text-decoration: none; color: white;
+	font-weight: bold;
+}
+
+nav.a:first-child{
+	color: #00b894;
+}
+
+nav.div.a{
+	color: green;
+}
+main{
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center; color: white;
+}
+
+section{
+
+}
+
+section h3{
+	font-size: 35px; font-weight: 200; letter-spacing: 3px;
+	text-shadow: 1px 1px 2px black;
+	color:red;
+}
+
+section h1{
+	margin: 30px 0 20px;
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 2px 1px 5px black;
+	text-transform: uppercase;
+}
+
+section p{
+	font-size: 25px;
+	color: violet;
+	word-spacing: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
+}
+
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+}
+section .btnone{
+	background: #fff;
+	color: #000;
+}
+.btnone:hover{
+	background: #bbb;
+	color: #000;
+}
+
+section .btntwo{
+	background: #bbb;
+	color: #000;
+}
+.btntwo:hover{
+	background: #fff;
+	color: #000;
+}
+.change_content:after{
+	content: '';
+	animation: changetext 20s infinite linear;
+	color: darkred;
+}
+
+@keyframes changetext{
+	0%{content: "camera";}
+	10%{content: "full hd video recording";}
+	20%{content: "teddy bear";}
+	30%{content: "alto car";}
+	40%{content: "back cover print";}
+	50%{content: "t-shirt print";}
+	60%{content: "cup-print";}
+	80%{content: "contact with me";}
+	90%{content: "8016562958";}
+}
+
+.number{
+	color: darkred;
+}
